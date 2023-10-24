@@ -1,5 +1,5 @@
-const StartServer = (PORT: number): boolean => {
+const StartServer = (PORT: string): boolean => {
   return true;
 };
 
-StartServer(3000);
+StartServer("3000");
