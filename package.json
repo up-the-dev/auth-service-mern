@@ -1,0 +1,24 @@
+{
+  "name": "auth-service",
+  "version": "1.0.0",
+  "description": "user management service",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/up-the-dev/auth-service.git"
+  },
+  "keywords": [
+    "microservice",
+    "auth",
+    "user-management"
+  ],
+  "author": "Umesh Pawar <umesh.a.pawar0805@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/up-the-dev/auth-service/issues"
+  },
+  "homepage": "https://github.com/up-the-dev/auth-service#readme"
+}
