@@ -1,5 +1,5 @@
 const StartServer = (PORT: string): boolean => {
-  return true;
+    return true;
 };
 
 StartServer("3000");

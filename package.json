@@ -1,31 +1,37 @@
 {
-  "name": "auth-service",
-  "version": "1.0.0",
-  "description": "user management service",
-  "main": "index.js",
-  "scripts": {
-    "dev": "npx tsc && node dist/server.js",
-    "format:check": "prettier . --check",
-    "format:fix": "prettier . --write"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/up-the-dev/auth-service.git"
-  },
-  "keywords": [
-    "microservice",
-    "auth",
-    "user-management"
-  ],
-  "author": "Umesh Pawar <umesh.a.pawar0805@gmail.com>",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/up-the-dev/auth-service/issues"
-  },
-  "homepage": "https://github.com/up-the-dev/auth-service#readme",
-  "devDependencies": {
-    "@types/node": "^20.8.8",
-    "prettier": "3.0.3",
-    "typescript": "^5.2.2"
-  }
+    "name": "auth-service",
+    "version": "1.0.0",
+    "description": "user management service",
+    "main": "index.js",
+    "scripts": {
+        "dev": "npx tsc && node dist/server.js",
+        "format:check": "prettier . --check",
+        "format:fix": "prettier . --write",
+        "lint:check": "eslint .",
+        "lint:fix": "eslint . --fix"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/up-the-dev/auth-service.git"
+    },
+    "keywords": [
+        "microservice",
+        "auth",
+        "user-management"
+    ],
+    "author": "Umesh Pawar <umesh.a.pawar0805@gmail.com>",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/up-the-dev/auth-service/issues"
+    },
+    "homepage": "https://github.com/up-the-dev/auth-service#readme",
+    "devDependencies": {
+        "@types/node": "^20.8.8",
+        "@typescript-eslint/eslint-plugin": "^6.9.0",
+        "@typescript-eslint/parser": "^6.9.0",
+        "eslint": "^8.52.0",
+        "eslint-config-prettier": "^9.0.0",
+        "prettier": "3.0.3",
+        "typescript": "^5.2.2"
+    }
 }
