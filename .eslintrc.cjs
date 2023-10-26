@@ -6,8 +6,13 @@ module.exports = {
         "prettier",
     ],
     rules: {
+        // Throws an error when console methods are used (like console.log)
         "no-console": "error",
+
+        // Requires usage of triple equals (===), and throws an error for double equals (==)
+        eqeqeq: "error",
     },
+
     parser: "@typescript-eslint/parser",
     plugins: ["@typescript-eslint"],
     root: true,

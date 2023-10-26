@@ -1,5 +1,6 @@
-const StartServer = (PORT: string): boolean => {
-    return true;
+const StartServer = (PORT: string): string => {
+    // console.log("sds");
+    return PORT;
 };
 
 StartServer("3000");
