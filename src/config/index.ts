@@ -13,11 +13,13 @@ import { config } from "dotenv";
 config();
 
 // Destructuring environmental variables from process.env
-const { PORT, NODE_ENV } = process.env;
+const { PORT, NODE_ENV, LOG_FILE_SIZE, LOG_LEVEL } = process.env;
 
 // Exporting 'Config' object, which includes environment variable values.
 // Config can be used in other modules and files of the project.
 export const Config = {
     PORT,
     NODE_ENV,
+    LOG_FILE_SIZE,
+    LOG_LEVEL,
 };
