@@ -9,15 +9,16 @@ Objectives : This code creates an instance of the Express.js framework. This ins
 
 import express, { Express, NextFunction, Request, Response } from "express";
 import logger from "./config/logger";
-import createHttpError, { HttpError } from "http-errors";
+import { HttpError } from "http-errors";
 
 // Creating an instance of the express application.
 const App: Express = express();
 
-// eslint-disable-next-line @typescript-eslint/require-await
+// eslint-disable-next-line @typescript-eslint/no-unused-vars, @typescript-eslint/require-await
 App.get("/", async (req: Request, res: Response, next: NextFunction) => {
-    const error = createHttpError(401, "user access not allowed");
-    next(error);
+    /*     const error = createHttpError(401, "user access not allowed");
+    next(error); */
+    res.status(200).send("welcome to techorizon");
 });
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
