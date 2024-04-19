@@ -1,0 +1,9 @@
+[] start gofiber from scrach. we will build auth service in gofiber
+[] create app instance in different go file and import it in server file
+[] create a mern application to monitor your daily progress:
+    - study +5 -- +1 if 45 min, +2 if 2 hr, +3 if 3h, +4 if 4hr, +5 if  >=6hr ,
+    - gym +3 -- +1 for 45min, +2 for 1.25h, +3 if sport+1 hr gym or 1.5 hr gym, 
+    - diet +2 -- +1 for no sugar,no oil, +2 for no sug,no oil,good protein .
+    - create ui like expense tracker for mvp
+    - if user add todays progress then data should be stored on mongodb atlas(cloud)
+    - deploy it

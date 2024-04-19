@@ -45,6 +45,9 @@ const coloredFormat = winston.format.printf(({ level, message = "" }) => {
 // Create a logger with provided configuration
 const logger = winston.createLogger({
     level: Config.LOG_LEVEL,
+    defaultMeta: {
+        serviceName: "auth-service",
+    },
     transports: [
         // Writes all logs to 'combined.log' file
         new winston.transports.File({
