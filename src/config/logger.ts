@@ -45,9 +45,7 @@ const coloredFormat = winston.format.printf(({ level, message = "" }) => {
 // Create a logger with provided configuration
 const logger = winston.createLogger({
     level: Config.LOG_LEVEL,
-    defaultMeta: {
-        serviceName: "auth-service",
-    },
+    defaultMeta: { serviceName: "auth-service" },
     transports: [
         // Writes all logs to 'combined.log' file
         new winston.transports.File({
@@ -64,7 +62,6 @@ const logger = winston.createLogger({
             ),
             silent: Config.NODE_ENV === "test",
         }),
-
         // Writes error logs to 'error.log' file
         new winston.transports.File({
             dirname: "logs",
@@ -81,7 +78,6 @@ const logger = winston.createLogger({
             maxsize: Number(Config.LOG_FILE_SIZE),
             silent: Config.NODE_ENV === "test",
         }),
-
         // Outputs log messages to console with colors
         new winston.transports.Console({
             level: Config.LOG_LEVEL,

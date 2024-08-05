@@ -4,7 +4,7 @@
     "description": "user management service",
     "main": "index.js",
     "scripts": {
-        "dev": "nodemon src/server.ts",
+        "dev": "nodemon --legacy-watch src/server.ts",
         "format:check": "prettier . --check",
         "format:fix": "prettier . --write",
         "lint:check": "eslint .",
@@ -14,19 +14,19 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/up-the-dev/auth-service.git"
+        "url": "git+https://github.com/up-the-dev/auth-service-mern.git"
     },
     "keywords": [
         "microservice",
         "auth",
         "user-management"
     ],
-    "author": "Umesh Pawar <umesh.a.pawar0805@gmail.com>",
+    "author": "Umesh Pawar <umeshpawarsde@gmail.com>",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/up-the-dev/auth-service/issues"
+        "url": "https://github.com/up-the-dev/auth-service-mern/issues"
     },
-    "homepage": "https://github.com/up-the-dev/auth-service#readme",
+    "homepage": "https://github.com/up-the-dev/auth-service-mern#readme",
     "devDependencies": {
         "@types/express": "^4.17.20",
         "@types/http-errors": "^2.0.3",

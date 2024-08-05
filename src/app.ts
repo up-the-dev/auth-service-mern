@@ -18,7 +18,8 @@ const App: Express = express();
 App.get("/", async (req: Request, res: Response, next: NextFunction) => {
     /*     const error = createHttpError(401, "user access not allowed");
     next(error); */
-    res.status(200).send("welcome to techorizon");
+
+    res.status(200).send("welcome to auth svc");
 });
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
